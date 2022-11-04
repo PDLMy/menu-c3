@@ -1,0 +1,220 @@
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgb(55, 55, 55);
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+ul li{
+    float: left;
+}
+
+ul li a{
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+li:hover>a{
+    background-color: #f8f8f8;
+    color: rgb(55, 55, 55);
+    transition: 0.5s linear;
+}
+
+.menu li{
+    list-style: none;
+    float: none;
+}
+
+.submenu li{
+    float: none;
+}
+
+.submenu{
+    position: absolute;
+    min-width: 160px;
+    display: none;
+}
+
+.submenu .submenu{
+    position: absolute;
+    min-width: 160px;
+    left: 100%;
+    display: none;
+}
+
+.parentmenu li:hover>.submenu{
+    display: block;
+}
+
+.iconn::after{
+    font-family: "FontAwesome";
+    content: "\f0da";
+    padding: 0 10px;
+    color: red;
+}
+
+li:hover .iconn::after{
+    content: "\f0d7";
+}
+
+.iconChild:after{
+    font-family: "FontAwesome";
+    content: "\f0da";
+    margin-left: 40px;
+    color: red;
+    display: none;
+}
+
+.parentmenu .submenu li:hover .iconChild:after{
+    display: inline-block;
+}
+
+.icon_trangchu::before{
+    font-family: "FontAweSome";
+    content: "\f015";
+    margin-right: 10px;
+}
+
+.icon_diendan::before{
+    font-family: "FontAweSome";
+    content: "\f0ac";
+    margin-right: 10px;
+}
+
+.icon_tailieu::before{
+    font-family: "FontAweSome";
+    content: "\f4d5";
+    margin-right: 10px;
+    text-align: left;
+}
+
+.icon_hoidap::before{
+    font-family: "FontAweSome";
+    content: "\f18d";
+    margin-right: 10px;
+    text-align: left;
+}
+
+.icon_gochoctap::before{
+    font-family: "FontAweSome";
+    content: "\f19d";
+    margin-right: 10px;
+}
+
+.css{
+    float: right;
+}
+
+.icon_login::before{
+    font-family: "FontAweSome";
+    content: "\f2f6";
+    margin-right: 10px;
+}
+
+.icon_register::before{
+    font-family: "FontAweSome";
+    content: "\f007";
+    margin-right: 10px;
+}
+
+.banner{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(220, 255, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #333;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    height: 1100px;
+    background-color: #b1b4f2;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.item{
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    margin-top: 50px;
+}
+
+.content h1{
+    margin: 0;
+    color: yellow;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.content h1::before{
+    content: "";
+    border-bottom: 5px solid red;
+    max-width: 200px;
+    display: block;
+    position: relative;
+    top: 40px;
+    left: 500px;
+}
+
+.footer{
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+
+
+
+.main_menu{
+    position: relative;
+    height: 46.4px;
+}
+
+ul li{
+    position: relative;
+}
+
+li::after{
+    content: "";
+    display: block;
+    border-top: 2px solid red;
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+}
+
+ li:hover>li::after{
+    display: none;
+}  
